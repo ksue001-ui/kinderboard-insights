@@ -23,8 +23,16 @@ window.KBUpdates = {
         if (!id(e.id) || seen.has(e.id)) fail();
         seen.add(e.id);
         if (!['label','period','date','title','description'].every(k=>str(e[k])) || !list(e.ids) || !e.ids.every(x=>ids.has(x))) fail();
+        if (e.periodStart && !/^\d{4}-\d{2}-\d{2}$/.test(e.periodStart)) fail();
+        if (e.pending && (!Array.isArray(e.pending) || !e.pending.every(p=>['title','published','note','url'].every(k=>str(p[k])) && /^https:\/\/(www\.)?naeyc\.org\//.test(p.url)))) fail();
         if (key === 'monthly' && (!list(e.summary) || !e.summary.length)) fail();
       }
+    }
+    const weeks=new Set([...existingEditions,...data.weekly].map(e=>e.id));
+    for(const m of data.monthly){
+      if(m.weekIds && (!list(m.weekIds)||!m.weekIds.every(id=>weeks.has(id)))) fail();
+      if(m.highlights && (!Array.isArray(m.highlights)||!m.highlights.every(h=>str(h.title)&&list(h.body)&&list(h.weekIds)&&h.weekIds.every(id=>weeks.has(id))))) fail();
+      if(m.coverage!==undefined && !str(m.coverage)) fail();
     }
     return data;
   },
@@ -34,7 +42,10 @@ window.KBUpdates = {
     const data = this.validate(await response.json(), window.INSIGHTS, window.EDITIONS);
     window.INSIGHTS.unshift(...data.articles);
     window.EDITIONS.unshift(...data.weekly);
-    window.MONTHLY = data.monthly;
+    const key=e=>e.periodStart||(e.date||e.reviewed||'').replaceAll('.','-');
+    window.EDITIONS.sort((a,b)=>key(b).localeCompare(key(a)));
+    window.INSIGHTS.sort((a,b)=>key(b).localeCompare(key(a)));
+    window.MONTHLY = data.monthly.sort((a,b)=>b.id.localeCompare(a.id));
     window.UPDATED_AT = data.updatedAt;
   }
 };
