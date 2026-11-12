@@ -1,7 +1,53 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-13",
   "articles": [
+    {
+      "id": "weekly-20261113-educator-participation",
+      "periodStart": "2026-11-06",
+      "title": "교사의 목소리가 기획에 닿으려면",
+      "deck": "NAEYC 100주년 참여 사례로 생각해 보는 현장 의견 수렴",
+      "topic": "교사 전문성",
+      "kind": "기관 운영 회고",
+      "age": "교사·기관 운영자",
+      "access": "공개 본문 확인",
+      "issue": "NAEYC Blog",
+      "published": "2026.11.06",
+      "reviewed": "2026.11.13",
+      "edition": "weekly-20261113",
+      "color": "voice",
+      "sourceTitle": "The People Behind Our Centennial Year",
+      "sourceLabel": "[S1] 100주년 기획에 참여한 교육자들",
+      "author": "Naomi Dillon",
+      "publication": "NAEYC Blog",
+      "url": "https://www.naeyc.org/resources/blog/the-people-behind-our-centennial-year",
+      "limit": "기관 담당자 회고이며 교육 효과 연구가 아닙니다. 국내 적용은 자체 제안입니다.",
+      "audience": [
+        "유치원",
+        "어린이집"
+      ],
+      "tags": [
+        "Teacher Agency",
+        "Teacher Professional Development"
+      ],
+      "summary": [
+        "현장 구성원의 경험과 의견이 기념사업 기획에 활용된 사례입니다."
+      ],
+      "overview": [
+        "NAEYC 담당자가 100주년 기획에 참여한 교육자와 지역 구성원의 역할을 돌아봅니다. 새로운 정책이나 교수법의 효과를 발표한 글은 아닙니다."
+      ],
+      "interpretation": [
+        "현장 의견을 받을 때 무엇을 바꿀 수 있는지, 결정 결과를 어떻게 알려줄지 함께 정하는 방식을 생각해 볼 수 있습니다. 이는 NAEYC 공식 권고가 아닌 자체 현장 해석입니다."
+      ],
+      "practice": [
+        "기관과 담당 연령에 따라 다른 업무 사례를 듣고, 반영 여부와 이유를 참여자에게 공유하는 방식을 검토해 보세요."
+      ],
+      "applications": {
+        "유치원": "3~5세 놀이 지원과 교육과정 협의 과정에서 겪는 구체적 어려움을 나누는 방식의 자체 제안입니다.",
+        "어린이집": "0~2세 돌봄·관찰과 3~5세 놀이·일과 사례를 구분하고 교사에게 추가 부담이 되는지 확인하는 자체 제안입니다."
+      },
+      "minutes": 3
+    },
     {
       "id": "oct-accreditation",
       "title": "교사를 준비하는 교육과정, 기준과 현장을 함께 살펴보기",
@@ -354,6 +400,33 @@
     }
   ],
   "weekly": [
+    {
+      "id": "weekly-20261113",
+      "label": "11.06–11.12",
+      "period": "2026.11.06 – 2026.11.12",
+      "periodStart": "2026-11-06",
+      "periodEnd": "2026-11-12",
+      "date": "2026.11.13",
+      "title": "현장 참여를 기획과 연결하기",
+      "description": "기간 내 공개 원문 1건을 확인했습니다. 11월 6일 글은 직전 조사 누락을 보완한 자료입니다. YC·EYC 가을호는 신규 발행이 아니며 이번 회원 본문 접근은 확인되지 않았습니다.",
+      "ids": [
+        "weekly-20261113-educator-participation"
+      ],
+      "pending": [
+        {
+          "title": "Growing with Play: Guided Play in the Primary Years",
+          "url": "https://www.naeyc.org/resources/pubs/yc/fall2026/growing-with-play",
+          "published": "Fall 2026 · 호 날짜 2026.08.26, 개별 발행일 미확인",
+          "note": "2026.11.13 공식 목차 확인. 현재 회원 본문 접근 미확인으로 요약·평가 보류."
+        },
+        {
+          "title": "Advice for Educators: Advice for First-Time Advocates",
+          "url": "https://www.naeyc.org/resources/pubs/eyc/fall2026/advice-for-educators",
+          "published": "Fall 2026 · 호 날짜 2026.09.30, 개별 발행일 미확인",
+          "note": "2026.11.13 공식 목차 확인. 현재 회원 본문 접근 미확인으로 요약·평가 보류."
+        }
+      ]
+    },
     {
       "id": "oct-20261026",
       "periodStart": "2026-10-26",
