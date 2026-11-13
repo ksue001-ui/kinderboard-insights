@@ -22,3 +22,19 @@
 .brand small{font-size:16px;font-weight:600;color:#245a4a;margin-top:7px;letter-spacing:0}
 @media(max-width:1050px){.brand small{font-size:15px}}
 @media(max-width:760px){.brand small{font-size:14px;margin-top:5px}}
+
+
+/* Live latest-edition panel, driven by the existing public weekly data. */
+.hero-briefing{background:#f7f9f1;padding:32px;display:flex;flex-direction:column;align-items:flex-start;border-left:1px solid #cbd8bc;min-width:0}
+.briefing-top{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;font-size:11px;color:#586b5c;flex-wrap:wrap}
+.briefing-top .pill{background:#e2ebd5;color:#245a4a}
+.briefing-period{font-size:12px;color:#58705e;margin-top:23px}
+.hero-briefing h2{font-size:25px;line-height:1.4;letter-spacing:-.04em;margin:10px 0 12px;word-break:keep-all;overflow-wrap:anywhere}
+.hero .briefing-description{font-size:13px;line-height:1.8;max-width:none;margin:0}
+.briefing-highlights{list-style:none;padding:0;margin:18px 0 22px;width:100%;border-top:1px solid #dce4d3}
+.briefing-highlights li{padding:12px 0;border-bottom:1px solid #dce4d3}
+.briefing-highlights strong{display:block;font-size:13px;color:#245a4a}
+.briefing-highlights span{display:block;font-size:12px;line-height:1.7;color:#586b5c;margin-top:5px}
+.hero-briefing>.btn{margin-top:auto}.briefing-note{font-size:10px;line-height:1.6;color:#64745d;margin-top:12px}
+@media(max-width:1050px){.hero-briefing{padding:27px}.hero-briefing h2{font-size:23px}}
+@media(max-width:760px){.hero-briefing{border-left:0;border-top:1px solid #cbd8bc;padding:27px}.hero-briefing h2{font-size:24px}.briefing-top{font-size:11px}.briefing-period{margin-top:18px}}
